@@ -12,35 +12,36 @@
 
     <section>
         <h2>Zapisz się na kurs</h2>
-   
-    <form>
-        <label for="fname">Imię</label><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Nazwisko</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="email">Adres e-mail</label><br>
-        <input type="text" id="mail" name="mail"><br><br>
-        <label for="phone">Telefon</label><br>
-        <input type="text" id="phone" name="phone"><br><br>
-        <label for="lname">Miasto</label><br>
-        <select name="Miasto">
-            <option>---
-            <option>Warszawa
-            <option>Kraków
-            <option>Gdańsk
-        </select><br>
-        <br>
-        <label for="lname">Płeć</label><br>
-        <input type="radio" id="gender1" name="Płeć" value="Kobieta">Kobieta<br>
-        <input type="radio" id="gender2" name="Płeć" value="Mężczyzna">Mężczyzna<br><br>
-        <input type="checkbox" id="zgoda" name="zgoda">Zgadzam się na przetwarzanie danych osobowych oraz przesyłanie aktualnych informacji nt. kursów zgodnie z postanowieniami polityki prywatności<br><br>
-        <textarea name="Komentarz" cols="50" rows="10">Wyślij nam wiadomość</textarea>
-        <br>
-        <input type="submit" value="Wyślij">
-    </form>
-</section>
 
-<script src="main.js"></script>
+        <form action="mailto:wochowskaj@gmail.com" method="post">
+            <label for="fname">Imię</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Nazwisko</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="e-mail">Adres e-mail</label><br>
+            <input type="text" id="e-mail" name="e-mail" required><br><br>
+            <label for="phone">Telefon</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="lname">Miasto</label><br>
+            <select name="Miasto">
+                <option>---
+                <option>Warszawa
+                <option>Kraków
+                <option>Gdańsk
+            </select><br>
+            <br>
+            <label for="lname">Płeć</label><br>
+            <input type="radio" id="gender1" name="Płeć" value="Kobieta">Kobieta<br>
+            <input type="radio" id="gender2" name="Płeć" value="Mężczyzna">Mężczyzna<br><br>
+            <input type="checkbox" id="zgoda" name="zgoda" required>Zgadzam się na przetwarzanie danych osobowych oraz
+            przesyłanie aktualnych informacji nt. kursów zgodnie z postanowieniami polityki prywatności<br><br>
+            <textarea name="Komentarz" cols="50" rows="10">Wyślij nam wiadomość</textarea>
+            <br>
+            <button type="submit">Wyślij formularz</button>
+        </form>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
