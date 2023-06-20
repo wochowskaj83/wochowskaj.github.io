@@ -1,0 +1,14 @@
+.skill {
+   max-width: 20px;
+   margin-bottom: 5px;
+}
+
+#tlo {
+   background-color: light;
+
+}
+
+.bg-img {
+   background-size: cover;
+   background-position: center;
+}
